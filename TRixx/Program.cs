@@ -9,9 +9,9 @@ namespace TRixx
 {
     class Program
     {
-        static int[] header = { 18, 8, 2, 2 };
-        static int[] palette = { 0, 6095619, 9634306, 13172993, 16711680, 16728128, 16744319, 16760767, 4002056, 7214854, 10362372, 13575170, 16722432, 16736321, 16684930, 16698819, 4332553, 7416327, 10565893, 13649666, 16733440, 16743482, 16687732, 16697774, 5911309, 8603146, 11360519, 14052355, 16744192, 16752189, 16694395, 16702392, 4862728, 7819270, 10841604, 13798146, 16754688, 16760384, 16766081, 16771777, 4865801, 7824647, 10848773, 13807618, 16766208, 16703299, 16640645, 16577736, 5394954, 8224008, 11118853, 13947907, 16776960, 16711244, 16711319, 16645603, 4608526, 6978827, 9349383, 11654148, 14024448, 14745158, 15400331, 16121041, 2966528, 5010176, 7053824, 9031680, 11075328, 12648263, 14220941, 15793876, 5131591, 7367765, 9538404, 11774322, 13944960, 14669212, 15328184, 16052436, 1591296, 2586112, 3580672, 4575488, 5570048, 8257085, 10943867, 13630904, 402944, 2640929, 4813377, 7051362, 9223810, 10736538, 12314802, 13827530, 16917, 28965, 41269, 53316, 65364, 4259711, 8388265, 12582612, 17185, 1925439, 3899228, 5807226, 7715479, 9554605, 11393732, 13232858, 15143, 27719, 40296, 52872, 65448, 4194238, 8323027, 12451817, 10016, 934457, 1793362, 2717802, 3576707, 5810330, 8109490, 10343113, 13878, 26728, 39835, 52685, 65535, 4194046, 8388350, 12516861, 10031, 21347, 32407, 43723, 54783, 4186110, 8382974, 12514301, 9786, 18283, 26525, 35022, 43263, 3980799, 7983615, 11921151, 6712, 12906, 18844, 25037, 30975, 3248895, 6532607, 9750527, 60, 109, 158, 206, 255, 3816191, 7566335, 11382271, 8072704, 9652509, 11232571, 12746840, 14326645, 15120283, 15979712, 16773350, 2230272, 4988432, 7746848, 10439472, 13197632, 13270115, 13342341, 13414824, 5321499, 6503453, 7751199, 8933153, 10115107, 12282666, 14515505, 16683064, 6176801, 7620633, 9064466, 10442506, 11886338, 13468725, 15116904, 16699291, 3745551, 5061411, 6443064, 7758924, 9074784, 10588282, 12102036, 13615534, 2827800, 3946022, 5064244, 6182465, 7300687, 9537649, 11708818, 13945780, 5423, 1189439, 2438991, 3623006, 4807022, 6911883, 8951463, 11056324, 1315860, 2171169, 3026478, 3947324, 4802889, 5658198, 6513507, 7368816, 8289662, 9144971, 10000280, 10855589, 11711154, 12632000, 13487309, 14342618, 0, 1119273, 2237752, 3355976, 4474455, 5592934, 6711413, 7829893, 8948116, 10066595, 11185074, 12303553, 13421777, 14540256, 15658735, 16777215 };
-        static string sVersion = "1.0.1";
+        static readonly int[] header = { 18, 8, 2, 2 };
+        static readonly int[] palette = { 16711935, 6095619, 9634306, 13172993, 16711680, 16728128, 16744319, 16760767, 4002056, 7214854, 10362372, 13575170, 16722432, 16736321, 16684930, 16698819, 4332553, 7416327, 10565893, 13649666, 16733440, 16743482, 16687732, 16697774, 5911309, 8603146, 11360519, 14052355, 16744192, 16752189, 16694395, 16702392, 4862728, 7819270, 10841604, 13798146, 16754688, 16760384, 16766081, 16771777, 4865801, 7824647, 10848773, 13807618, 16766208, 16703299, 16640645, 16577736, 5394954, 8224008, 11118853, 13947907, 16776960, 16711244, 16711319, 16645603, 4608526, 6978827, 9349383, 11654148, 14024448, 14745158, 15400331, 16121041, 2966528, 5010176, 7053824, 9031680, 11075328, 12648263, 14220941, 15793876, 5131591, 7367765, 9538404, 11774322, 13944960, 14669212, 15328184, 16052436, 1591296, 2586112, 3580672, 4575488, 5570048, 8257085, 10943867, 13630904, 402944, 2640929, 4813377, 7051362, 9223810, 10736538, 12314802, 13827530, 16917, 28965, 41269, 53316, 65364, 4259711, 8388265, 12582612, 17185, 1925439, 3899228, 5807226, 7715479, 9554605, 11393732, 13232858, 15143, 27719, 40296, 52872, 65448, 4194238, 8323027, 12451817, 10016, 934457, 1793362, 2717802, 3576707, 5810330, 8109490, 10343113, 13878, 26728, 39835, 52685, 65535, 4194046, 8388350, 12516861, 10031, 21347, 32407, 43723, 54783, 4186110, 8382974, 12514301, 9786, 18283, 26525, 35022, 43263, 3980799, 7983615, 11921151, 6712, 12906, 18844, 25037, 30975, 3248895, 6532607, 9750527, 60, 109, 158, 206, 255, 3816191, 7566335, 11382271, 8072704, 9652509, 11232571, 12746840, 14326645, 15120283, 15979712, 16773350, 2230272, 4988432, 7746848, 10439472, 13197632, 13270115, 13342341, 13414824, 5321499, 6503453, 7751199, 8933153, 10115107, 12282666, 14515505, 16683064, 6176801, 7620633, 9064466, 10442506, 11886338, 13468725, 15116904, 16699291, 3745551, 5061411, 6443064, 7758924, 9074784, 10588282, 12102036, 13615534, 2827800, 3946022, 5064244, 6182465, 7300687, 9537649, 11708818, 13945780, 5423, 1189439, 2438991, 3623006, 4807022, 6911883, 8951463, 11056324, 1315860, 2171169, 3026478, 3947324, 4802889, 5658198, 6513507, 7368816, 8289662, 9144971, 10000280, 10855589, 11711154, 12632000, 13487309, 14342618, 0, 1119273, 2237752, 3355976, 4474455, 5592934, 6711413, 7829893, 8948116, 10066595, 11185074, 12303553, 13421777, 14540256, 15658735, 16777215 };
+        static readonly string version = "1.0.2";
 
         static void Main(string[] args)
         {
@@ -19,7 +19,7 @@ namespace TRixx
             bool bStillNothing = true;
             TRixxSettings settings = new TRixxSettings();
             List<string> commands = new List<string>();
-            string buff = "";
+            string buff;
 
             if (args.Length > 0)
             {
@@ -42,17 +42,17 @@ namespace TRixx
 
                             case "-silent":
                                 lastCommand = "silent";
-                                settings.bQuiet = true;
+                                settings.quiet = true;
                                 break;
 
                             case "-log":
                                 lastCommand = "log";
-                                settings.bQuiet = true;
+                                settings.quiet = true;
                                 break;
 
                             case "-forcetif":
                                 lastCommand = "forcetif";
-                                settings.bForceTIF = true;
+                                settings.forceTIF = true;
                                 break;
 
                             case "-in":
@@ -123,7 +123,7 @@ namespace TRixx
             while (bStillNothing)
             {
                 Console.Clear();
-                Console.WriteLine("Toxic Ragers presents TRixx for PIX v" + sVersion);
+                Console.WriteLine("Toxic Ragers presents TRixx for PIX v" + version);
                 Console.WriteLine();
                 Console.WriteLine("   Options...");
                 Console.WriteLine("1) Process folder");
@@ -134,9 +134,9 @@ namespace TRixx
                 Console.WriteLine("   Settings...");
                 Console.WriteLine("a) Set input folder (" + tidyPath(settings.inDir) + ")");
                 Console.WriteLine("b) Set output folder (" + tidyPath(settings.outDir) + ")");
-                Console.WriteLine("c) Toggle output (" + (settings.bQuiet ? "silent" : "verbose") + ")");
-                Console.WriteLine("d) Toggle logging (to " + (settings.bToFile ? "file" : "screen") + ")");
-                Console.WriteLine("e) Force tiff (" + (settings.bForceTIF ? "true" : "false") + ")");
+                Console.WriteLine("c) Toggle output (" + (settings.quiet ? "silent" : "verbose") + ")");
+                Console.WriteLine("d) Toggle logging (to " + (settings.toFile ? "file" : "screen") + ")");
+                Console.WriteLine("e) Force tiff (" + (settings.forceTIF ? "true" : "false") + ")");
                 Console.WriteLine();
                 Console.WriteLine("Q) Quit");
                 Console.WriteLine();
@@ -188,13 +188,13 @@ namespace TRixx
                         break;
 
                     case ConsoleKey.C:
-                        settings.bQuiet = !settings.bQuiet;
+                        settings.quiet = !settings.quiet;
                         break;
 
                     case ConsoleKey.D:
-                        settings.bToFile = !settings.bToFile;
+                        settings.toFile = !settings.toFile;
 
-                        if (settings.bToFile)
+                        if (settings.toFile)
                         {
                             Console.Clear();
                             Console.WriteLine("Please enter a log name to or press enter to use " + settings.logFile);
@@ -204,7 +204,7 @@ namespace TRixx
                         break;
 
                     case ConsoleKey.E:
-                        settings.bForceTIF = !settings.bForceTIF;
+                        settings.forceTIF = !settings.forceTIF;
                         break;
 
                     case ConsoleKey.Q:
@@ -254,7 +254,7 @@ namespace TRixx
 
             foreach (FileInfo fi in here.GetFiles("*.twt"))
             {
-                processTWT(fi);
+                ProcessTWT(fi);
                 fi.MoveTo(fi.FullName.Replace(fi.Extension, ".TWaT"));
             }
 
@@ -278,7 +278,7 @@ namespace TRixx
             }
         }
 
-        public static void processTWT(FileInfo fi)
+        public static void ProcessTWT(FileInfo fi)
         {
             string dest = fi.DirectoryName + "\\" + fi.Name.Replace(fi.Extension, "");
             if (!Directory.Exists(dest)) { Directory.CreateDirectory(dest); }
@@ -325,9 +325,9 @@ namespace TRixx
 
         private static void logLine(string line, TRixxSettings settings)
         {
-            if (settings.bQuiet) { return; }
+            if (settings.quiet) { return; }
 
-            if (settings.bToFile)
+            if (settings.toFile)
             {
                 StreamWriter sw = new StreamWriter(Directory.GetCurrentDirectory() + "\\" + settings.logFile, true);
                 sw.WriteLine(line);
@@ -339,12 +339,12 @@ namespace TRixx
             }
         }
 
-        public static void ProcessPIX(FileInfo fi, TRixxSettings settings,  bool bPixie = false, bool bMassUnpack = false)
+        public static void ProcessPIX(FileInfo fi, TRixxSettings settings,  bool pixie = false, bool massUnpack = false)
         {
-            string dest = fi.DirectoryName + (bPixie ? (fi.Extension.EndsWith("08") ? "\\tiffx\\" : "\\tiffrgb\\") : "\\");
-            if (bMassUnpack) { dest = fi.Directory.Parent.FullName + (fi.DirectoryName.EndsWith("8") ? "\\tiffx\\" : "\\tiffrgb\\"); }
+            string dest = fi.DirectoryName + (pixie ? (fi.Extension.EndsWith("08") ? "\\tiffx\\" : "\\tiffrgb\\") : "\\");
+            if (massUnpack) { dest = fi.Directory.Parent.FullName + (fi.DirectoryName.EndsWith("8") ? "\\tiffx\\" : "\\tiffrgb\\"); }
             if (!Directory.Exists(dest)) { Directory.CreateDirectory(dest); }
-            bool bC1 = false;
+            bool c1 = false;
 
             //Console.WriteLine(fi.Name);
 
@@ -386,7 +386,7 @@ namespace TRixx
             {
                 if (br.BaseStream.Position + 8 > br.BaseStream.Length)
                 {
-                    logLine("Unexpected end of file! (" + (br.BaseStream.Length - br.BaseStream.Position) + " bytes remaining)!", settings);
+                    logLine($"Unexpected end of file! ({(br.BaseStream.Length - br.BaseStream.Position)} bytes remaining)!", settings);
                     br.BaseStream.Position = br.BaseStream.Length;
                     continue;
                 }
@@ -454,7 +454,7 @@ namespace TRixx
                         {
                             case 3:
                                 // just a regular 8bit pix
-                                bC1 = true;
+                                c1 = true;
                                 break;
                             case 6:
                                 // 24 bit pix?!
@@ -510,13 +510,18 @@ namespace TRixx
 
                         if (bUsingRowSize) { RowSize /= PixelSize; }
 
-                        if ((bC1 || bType == 7) && !settings.bForceTIF)
+                        if ((c1 || bType == 7) && !settings.forceTIF)
                         {
-                            BinaryWriter bmp = new BinaryWriter(new FileStream(dest + fi.Name.Replace(fi.Extension, "") + "_" + filename.ToUpper().Replace(".PIX", "") + (bType == 7 ? "_pal" : "") + ".bmp", FileMode.Create));
+                            string outPath = Path.Combine(dest, Path.GetFileNameWithoutExtension(fi.Name), $"{filename.ToUpper().Replace(".PIX", "")}{(bType == 7 ? "_pal" : "")}.bmp");
+
+                            Directory.CreateDirectory(Path.GetDirectoryName(outPath));
+
+                            BinaryWriter bmp = new BinaryWriter(new FileStream(outPath, FileMode.Create));
+
                             bmp.Write(new byte[] { 66, 77 });
                             bmp.Write(14 + 40 + 1024 + (RowSize * Height));
-                            bmp.Write((Int16)0);
-                            bmp.Write((Int16)0);
+                            bmp.Write((short)0);
+                            bmp.Write((short)0);
                             bmp.Write(1078);        // Offset to pixel data
 
                             // BITMAPINFOHEADER
@@ -531,8 +536,8 @@ namespace TRixx
                                 bmp.Write(Width);
                                 bmp.Write(Height);
                             }
-                            bmp.Write((Int16)1);    // Number of planes?  Always 1
-                            bmp.Write((Int16)8);    // Bits per pixel
+                            bmp.Write((short)1);    // Number of planes?  Always 1
+                            bmp.Write((short)8);    // Bits per pixel
                             bmp.Write(0);           // No compression
                             bmp.Write(RowSize * Height);           // Raw size
                             bmp.Write(3780);        // Horizontal pixels per metre
@@ -637,7 +642,7 @@ namespace TRixx
                         break;
 
                     default:
-                        logLine(fi.Name + " has an unknown section, " + block + " (" + br.BaseStream.Position + ").  Aborting", settings);
+                        logLine($"{fi.Name} has an unknown section, {block} ({br.BaseStream.Position}).  Aborting", settings);
                         return;
                 }
             }
@@ -749,16 +754,16 @@ namespace TRixx
             }
         }
 
-        public static UInt16 ReadUInt16(BinaryReader br)
+        public static ushort ReadUInt16(BinaryReader br)
         {
             byte[] bytes = br.ReadBytes(2);
             return (ushort)(bytes[0] << 8 | bytes[1]);
         }
 
-        public static UInt32 ReadUInt32(BinaryReader br)
+        public static uint ReadUInt32(BinaryReader br)
         {
             byte[] bytes = br.ReadBytes(4);
-            UInt32[] ints = new UInt32[4];
+            uint[] ints = new uint[4];
 
             ints[0] = bytes[0];
             ints[1] = bytes[1];
@@ -775,7 +780,7 @@ namespace TRixx
 
         public static void WriteInt16(int i, ref BinaryWriter bw)
         {
-            byte[] b = BitConverter.GetBytes((Int16)i);
+            byte[] b = BitConverter.GetBytes((short)i);
             Array.Reverse(b);
             bw.Write(BitConverter.ToInt16(b, 0));
         }
@@ -828,24 +833,22 @@ namespace TRixx
 
     public class TRixxSettings
     {
-        public bool bQuiet;
-        public bool bToFile;
-        public bool bForceTIF;
+        public bool quiet;
+        public bool toFile;
+        public bool forceTIF;
         public string logFile;
         public string inDir;
         public string outDir;
 
         public TRixxSettings()
         {
-            this.bQuiet = false;
-            this.bToFile = false;
-            this.bForceTIF = false;
-            this.logFile = "TRixx.log";
+            quiet = false;
+            toFile = false;
+            forceTIF = false;
+            logFile = "TRixx.log";
 
-            //this.inDir = "D:\\Carmageddon\\Data\\Pixelmap\\!\\";
-            this.inDir = Directory.GetCurrentDirectory();
-            //this.inDir = "D:\\A\\";
-            this.outDir = Directory.GetCurrentDirectory();
+            inDir = Directory.GetCurrentDirectory();
+            outDir = Directory.GetCurrentDirectory();
         }
     }
 }
